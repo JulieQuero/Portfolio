@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-100">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,11 @@
               <br \>
               J'aime faire du roller, lire des livres de sciences-fiction, jouer aux jeux vidéos.
               <br \>
-            Je suis rigoureuse, enthousiasme et autonome au quotidien.</p></div>
+            Je suis rigoureuse, enthousiasme et autonome au quotidien. 
+              <br \>
+            J'ai découvert l'univers du développement web il y a quelques années et depuis je me forme par moi-même. 
+              <br \>
+            Je suis en BUT MMI depuis septembre et je recherche une alternance por septembre 2022.</p></div>
             <div><img src="images/photo_moi.jpg" width="276px" height="366px" alt="photo de moi"></div>
           </div>
         </div>
@@ -134,28 +138,28 @@
         </div>
 
         <div id="contact">
-            <div class="form-signin">
-              <form>
+            <div class="form-signin" >
+              <form class="formulaire" method="POST" action="envoi_mail.php">
                 <div class="divimage"><img class="mb-4" src="images/envelopewhite.svg" alt="" width="72" height="57"></div>
                 <h1 class="h3 mb-3 fw-normal">Contactez-moi</h1>
             
                 <div class="form-floating">
-                  <input type="text" class="form-control" placeholder="Dupond">
+                  <input type="text" class="form-control" placeholder="Dupond" name="nom" id="nom">
                   <label for="floatingInput">Nom</label>
                 </div>
 
                 <div class="form-floating">
-                  <input type="text" class="form-control" placeholder="Toto">
+                  <input type="text" class="form-control" placeholder="Toto" name="prenom" id="prenom">
                   <label for="floatingInput">Prénom</label>
                 </div>
 
                 <div class="form-floating Email">
-                  <input type="mail" class="form-control" placeholder="name@example.com">
+                  <input type="mail" class="form-control" placeholder="name@example.com" name="email" id="email">
                   <label for="floatingInput">Email</label>
                 </div>
 
                 <div class="form-floating message">
-                  <textarea class="form-control" placeholder="Coucou"></textarea>
+                  <textarea class="form-control" placeholder="Coucou" name="message" id="message"></textarea>
                   <label for="floatingInput">Message</label>
                 </div>
 
